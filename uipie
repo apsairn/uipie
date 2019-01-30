@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+
+# Copyright All,2019-2020 Apsairn Open Sourced by BSD.
+import os
+from uipierc import *
+from uipie_lib import *
+# Clear your displayer
+os.system("clear")
+print(greeting)
+def login():
+    print("Please login")
+    print("There is two users in your computer.Which one?")
+    print("1.",username)
+    print("2.Master User")
+    user=input("Input ID")
+    if user=="1":
+        pwd1=input("Password:")
+        if pwd1==pwd:
+            if userid!=None:
+                piestart()
+    elif user=="2":
+        pwd1=input("Password:")
+        if pwd1==masterpwd:
+            if userid!=None:
+                piestart()
+    else:
+        print("Sorry,There is no User",user,"in this machine.Please Retry.")
+        login()
+login()
