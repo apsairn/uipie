@@ -1,2 +1,2 @@
-# uipie
-A Operating UI of Linux CLI
+# UIPie
+A Operating UI of Linux CLI it is.
